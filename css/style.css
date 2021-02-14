@@ -1,0 +1,76 @@
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.container,
+input[id^="search"], 
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* ===================================== 
+   Input
+======================================== */
+
+.gallery-input {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#search {
+    width: 60%;
+}
+
+input[id^="search"] {
+    height: 2.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px solid #bebebe;
+    border-radius: 6px;
+}
+
+
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.gallery {
+    max-width: 1000px;
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 30px;
+}
+
+
+/* ===================================== 
+   Media Queries
+======================================== */
+
+@media (min-width: 678px) {
+    img {
+        width: 220px;
+    }
+}

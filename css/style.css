@@ -69,7 +69,7 @@ input[id^="search"] {
    Media Queries
 ======================================== */
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
     img {
         width: 220px;
     }
